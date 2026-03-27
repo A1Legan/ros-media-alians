@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body>
+      <body className="overflow-x-hidden">
         <main className="bg-linear-to-r from-[#010B17] to-[#051932]">
         <MainHeader />
         {children}

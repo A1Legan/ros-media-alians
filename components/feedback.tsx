@@ -34,7 +34,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
             src={Pentangle}
             width={16}
             alt="Li"/>
-            <h2>Проекты</h2>
+            <h2>Отзывы</h2>
         </div>
         <div className="relative max-w-full mx-auto overflow-hidden py-20">
         <div

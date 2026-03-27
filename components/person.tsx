@@ -56,7 +56,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
         </div>
         </div>
         <div className="flex flex-row w-full justify-between">
-        <Link href="#" className="flex gap-2 items-center"><p className="opacity-50">Смотреть всю команду</p>
+        <Link href="team" className="flex gap-2 items-center"><p className="opacity-50">Смотреть всю команду</p>
         <Image 
         src={Arrow}
         width={20}
