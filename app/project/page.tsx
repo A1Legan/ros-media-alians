@@ -61,17 +61,19 @@ export default function Home() {
         return activeCategory;
     };
     return (
-        <section className="flex flex-col ml-auto mr-auto max-w-336 gap-12">
+        <section className="flex flex-col ml-auto mr-auto max-w-336 gap-12 px-5 my-10
+            lg:px-0"
+        >
         <div>
             <div className="flex items-center gap-2">
-                <Link href="/" className="opacity-50">Главная</Link>
+                <Link href="/" className="opacity-50 text-white">Главная</Link>
                 <Image className="opacity-50"
                 src={Pentangle}
                 width={8}
                 alt="Pentangle"/>
-                <p>Проекты</p>
+                <p className="text-white">Проекты</p>
             </div>
-            <h2 className="flex items-center gap-2 text-4xl">Проекты</h2>
+            <h2 className="flex items-center gap-2 text-4xl text-white">Проекты</h2>
         </div>
         <div>
             <div className="flex gap-3 mb-8">

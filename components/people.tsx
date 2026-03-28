@@ -10,9 +10,9 @@ export default function People() {
             width={1000}
             alt='Comand'/>
             <div className='text-center pt-2'>
-                <h3 className='text-2xl'>Анна Смирнова</h3>
-                <p className='opacity-75 text-lg'>Название должности</p>
-                <p className='opacity-75'>corp@mail.ru</p>
+                <h3 className='text-2xl text-white'>Анна Смирнова</h3>
+                <p className='opacity-50 text-lg text-white'>Название должности</p>
+                <p className='opacity-50 text-white'>corp@mail.ru</p>
             </div>
         </div>
     );

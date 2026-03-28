@@ -70,13 +70,13 @@ export function Hero() {
         flex flex-col max-w-250 gap-10 ml-auto mr-auto px-5 py-50
         lg:text-center lg:px-0 lg:py-60"
       >
-          <h1 className="text-5xl z-100
+          <h1 className="text-5xl z-100 text-white
             lg:text-7xl"
           >Альянс, <span className="text-[#0C87FF]">объединяющий</span> инициативы и людней</h1>
-          <p className="text-md max-w-130 ml-auto mr-auto opacity-75 z-100
+          <p className="text-md max-w-130 ml-auto mr-auto opacity-75 z-100 text-white
             lg:text-xl"
           >Проекты, которые объединяют людей, идеи и смыслы. От концепции до реализации — в единой системе.</p>
-          <Link href='contacts' className="flex justify-center ml-auto mr-auto bg-[#0074FF] gap-2 items-center py-3 px-10 rounded-xl z-100">
+          <Link href='contacts' className="text-white flex justify-center ml-auto mr-auto bg-[#0074FF] gap-2 items-center py-3 px-10 rounded-xl z-100">
           Стать участником
           <Image 
           src={RightArrow}
@@ -88,12 +88,12 @@ export function Hero() {
 
 export function Part() {
   return (
-    <section className="text-center ml-auto mr-auto mt-30 
+    <section className="text-center ml-auto mr-auto mt-30 max-w-366 overflow-hidden
       lg:mt-110"
     >
-      <h2 className="text-md tracking-[4]">ПАРТНЁРЫ, КОТОРЫЕ ВЫБИРАЮТ НАС:</h2>
-      <div className="hidden gap-4 justify-center my-20
-        lg:flex">
+      <h2 className="text-md tracking-[4] text-white">ПАРТНЁРЫ, КОТОРЫЕ ВЫБИРАЮТ НАС:</h2>
+      <div className="gap-4 justify-center my-20 flex">
+        <Partner />
         <Partner />
         <Partner />
         <Partner />
@@ -113,19 +113,19 @@ export function About() {
         src={Pentangle}
         width={16}
         alt="Li"/>
-        <h2 className="">О нас</h2>
+        <h2 className="text-white">О нас</h2>
       </div>
-      <div className="flex flex-col gap-10 ">
-        <h3 className="text-2xl max-w-110 opacity-75 tracking-[1] bg-radial from-white from-20% to-[#b5b5b5] bg-clip-text text-transparent
+      <div className="flex flex-col gap-10">
+        <h3 className="bg-linear-to-r to-[#b5b5b5] from-white from-20% bg-clip-text text-transparent font-medium text-2xl max-w-110 opacity-75 tracking-[1]
         lg:max-w-160 lg:text-3xl"
         >Реализуем проекты полного цикла — от инициативы до практического запуска.</h3>
-        <div className="flex flex-col gap-4 text-xl opacity-50
+        <div className="flex flex-col gap-4 text-xl opacity-50 text-white
         lg:flex-row lg:gap-60"
         >
-          <p className="max-w-96 text-lg
+          <p className="max-w-110 text-lg
           lg:text-xl"
           >Выстраиваем процессы от инициативы до практического результата, объединяя участников, экспертов и партнёров.</p>
-          <p className="max-w-96 text-lg
+          <p className="max-w-110 text-lg
           lg:text-xl"
           >Наша задача — создать управляемую среду, в которой сложные проекты реализуются последовательно и эффективно.</p>
         </div>
@@ -145,7 +145,7 @@ export function Carousel() {
   const images = [Project, Project, Project, Project, Project, Project];
 
   return (
-    <main className="min-h-scree ">
+    <main>
       <section className="py-16 px-4">
         <ImageCarousel images={images} />
         
@@ -161,7 +161,7 @@ export function Personal() {
   const images = [People, People, People, People, People, People, People];
 
   return (
-    <main className="min-h-scree">
+    <main>
       <section className="py-16 px-4">
         <Person images={images} />
       </section>
@@ -175,17 +175,17 @@ export function Contact() {
     lg:max-w-366 lg:flex-row lg:px-0">
       <div className="flex flex-col">
         <h2 className="bg-linear-to-r to-white from-[#b5b5b5] bg-clip-text text-5xl text-transparent font-medium max-w-100">Присоединиться к альянсу</h2>
-        <p className="opacity-50 mt-5 text-xl max-w-140">Оставьте заявку, чтобы включиться в действующие инициативы и получить информацию о формате участия.</p>
+        <p className="opacity-50 mt-5 text-xl max-w-140 text-white">Оставьте заявку, чтобы включиться в действующие инициативы и получить информацию о формате участия.</p>
       </div>
       <form action="" className="flex flex-col max-w-200 w-full gap-6">
         <div className="flex flex-col gap-4">
-          <input type="text" name="text" id="FIO" required placeholder="ФИО" className="bg-white/5 px-4 py-6 rounded-2xl text-xl w-full"/>
-          <input type="text" name="text" id="FIO" required placeholder="Контакт для связи" className="bg-white/5 px-4 py-6 rounded-2xl text-xl w-full"/>
+          <input type="text" name="text" id="FIO" required placeholder="ФИО" className="bg-white/5 px-4 py-6 rounded-2xl text-xl w-full text-white"/>
+          <input type="text" name="text" id="FIO" required placeholder="Контакт для связи" className="bg-white/5 px-4 py-6 rounded-2xl text-xl w-full text-white"/>
         </div>
-        <button className="bg-[#0074FF] py-6 rounded-2xl text-2xl">Стать участником</button>
+        <button className="bg-[#0074FF] py-6 rounded-2xl text-2xl text-white">Стать участником</button>
         <div className="flex items-start gap-2">
           <input type="checkbox" id="Agree" className="size-8 accent-[#0074FF]"/>
-          <label htmlFor="Agree" className="text-lg
+          <label htmlFor="Agree" className="text-lg text-white
             lg:text-2xl"
           >Даю <Link href="#" className="text-[#0074FF]">согласие на обработку</Link> персональных данных и принимаю условия <Link href="#" className="text-[#0074FF]">политики конфиденциальности</Link></label>
         </div>
@@ -201,7 +201,7 @@ export function Review() {
   const images = [Comment, Comment, Comment, Comment, Comment, Comment, Comment, Comment, Comment];
 
   return (
-    <main className="min-h-screen">
+    <main>
       <section className="py-16 px-4">
         <Feedback images={images} />
       </section>

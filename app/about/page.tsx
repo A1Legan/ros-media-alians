@@ -11,14 +11,14 @@ export default function Home() {
         >
         <div>
             <div className="flex items-center gap-2">
-                <Link href="/" className="opacity-50">Главная</Link>
+                <Link href="/" className="opacity-50 text-white">Главная</Link>
                 <Image className="opacity-50"
                 src={Pentangle}
                 width={8}
                 alt="Pentangle"/>
                 <p>О нас</p>
             </div>
-            <h2 className="flex items-center gap-2 text-4xl">О нас</h2>
+            <h2 className="flex items-center gap-2 text-4xl text-white">О нас</h2>
         </div>
         <div className="flex flex-col-reverse gap-12
             lg:flex-row">
@@ -29,13 +29,13 @@ export default function Home() {
                 lg:w-1/2"
             >
                 <h3 className="max-w-160 tracking-[1] text-2xl
-                    lg:text-3xl lg:leading-10"
+                    lg:text-3xl lg:leading-10 text-white"
                 >Реализуем проекты полного цикла — от инициативы до практического запуска.</h3>
                 <div className="flex flex-col gap-6 text-xl opacity-50
                     lg:flex-row"
                 >
-                    <p className="lg:w-1/2">Выстраиваем процессы от инициативы до практического результата, объединяя участников, экспертов и партнёров.</p>
-                    <p className="lg:w-1/2">Наша задача — создать управляемую среду, в которой сложные проекты реализуются последовательно и эффективно.</p>
+                    <p className="lg:w-1/2 text-white">Выстраиваем процессы от инициативы до практического результата, объединяя участников, экспертов и партнёров.</p>
+                    <p className="lg:w-1/2 text-white">Наша задача — создать управляемую среду, в которой сложные проекты реализуются последовательно и эффективно.</p>
                 </div>
             </div>
         </div>

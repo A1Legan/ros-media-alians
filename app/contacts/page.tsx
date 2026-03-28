@@ -21,22 +21,22 @@ export default function Home() {
         >
         <div>
             <div className="flex items-center gap-2">
-                <Link href="/" className="opacity-50">Главная</Link>
+                <Link href="/" className="opacity-50 text-white">Главная</Link>
                 <Image className="opacity-50"
                 src={Pentangle}
                 width={8}
                 alt="Pentangle"/>
                 <p>Контакты</p>
             </div>
-            <h2 className="flex items-center gap-2 text-4xl">Контакты</h2>
+            <h2 className="flex items-center gap-2 text-4xl text-white">Контакты</h2>
         </div>
         <div className="flex flex-col justify-between gap-12
             lg:flex-row"
         >
             <div>
-                <h2 className='opacity-50'>Контакты</h2>
+                <h2 className='opacity-50 text-white'>Контакты</h2>
                 <div className='flex flex-col text-2xl gap-3'>
-                    <p>+7 (495) 230-57-35</p>
+                    <p className="text-white">+7 (495) 230-57-35</p>
                     <div>
                         <CopyButton />
                     </div>
@@ -48,15 +48,15 @@ export default function Home() {
                 >Присоединиться к реализации проектов</h2>
                 <form action="" className="flex flex-col max-w-200 w-full gap-6">
                     <div className="flex flex-col gap-4">
-                        <input type="text" name="text" id="FIO" required placeholder="ФИО" className="bg-white/5 px-4 py-6 rounded-2xl text-xl w-full border-2 border-white/5"/>
-                        <input type="text" name="text" id="FIO" required placeholder="Контакт для связи" className="bg-white/5 px-4 py-6 rounded-2xl text-xl w-full border-2 border-white/5"/>
+                        <input type="text" name="text" id="FIO" required placeholder="ФИО" className="bg-white/5 px-4 py-6 rounded-2xl text-xl w-full border-2 border-white/5 text-white"/>
+                        <input type="text" name="text" id="FIO" required placeholder="Контакт для связи" className="bg-white/5 px-4 py-6 rounded-2xl text-xl w-full border-2 border-white/5 text-white"/>
                     </div>
-                    <button className="bg-[#0074FF] py-3 text-2xl rounded-xl
+                    <button className="bg-[#0074FF] py-3 text-2xl rounded-xl text-white
                         lg:rounded-full"
                     >Стать участником</button>
                     <div className="flex items-start gap-2">
                         <input type="checkbox" id="Agree" className="size-8 accent-[#0074FF]"/>
-                        <label htmlFor="Agree" className="text-lg
+                        <label htmlFor="Agree" className="text-lg text-white
                             lg:text-2xl"
                         >Даю <Link href="#" className="text-[#0074FF]">согласие на обработку</Link> персональных данных и принимаю условия <Link href="#" className="text-[#0074FF]">политики конфиденциальности</Link></label>
                     </div>

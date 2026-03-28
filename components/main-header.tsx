@@ -26,8 +26,8 @@ export default function Header() {
     }, []);
     return (
         <header className={
-            `flex max-w-110 justify-between px-4 top-0 left-auto right-auto sticky py-4 z-101
-            lg:justify-center lg:max-w-full
+            `flex flex-col max-w-110 justify-between px-4 top-0 left-auto right-auto sticky py-4 z-101
+            lg:justify-center lg:max-w-full lg:flex-row
             ${isScrolled
                 ? `bg-black/50 backdrop-blur-md`
                 : `bg-transparent`
@@ -48,7 +48,9 @@ export default function Header() {
                     <Link href="contacts" className='hover:underline'>Контакты</Link>
                     <Link href="team" className='hover:underline'>Команда</Link>
                 </div>
-                <Link href="contacts" className="hidden lg:flex gap-2 bg-white text-[#0B0E1D] px-5 py-2 rounded-xl items-center">
+                <Link href="contacts" className="hidden gap-2 bg-white text-[#0B0E1D] px-5 py-2 rounded-xl items-center
+                    lg:flex"
+                >
                     <Image 
                     src={Enter}
                     width={18}
@@ -67,10 +69,10 @@ export default function Header() {
                 </button>
             </div>
             {isMobileMenuOpen && (
-                <div className="fixed inset-0 bg-linear-to-r from-[#010B17] to-[#051932] z-50
+                <div className="sticky inset-0 z-50
                     lg:hidden"
                 >
-                    <div className="flex flex-col h-full p-4">
+                    <div className="absolute flex flex-col max-h-250 -top-16 w-[430] -left-4 px-4 py-6 bg-linear-to-r from-[#010B17] to-[#051932]">
                         <div className="flex justify-between items-center mb-8">
                             <Image
                             src={Logo}
@@ -95,7 +97,7 @@ export default function Header() {
                                 <Link href='team' className='hover:underline'>Участникам</Link>
                                 <Link href='contacts' className='hover:underline'>Контакты</Link>
                             </div>
-                            <Link href="contacts" className="flex gap-2 bg-white text-[#0B0E1D] px-5 py-3 rounded-xl items-center">
+                            <Link href="contacts" className="flex gap-2 bg-white text-[#0B0E1D] px-5 py-3 rounded-xl items-center mb-15">
                                 <Image 
                                     src={Enter}
                                     width={18}

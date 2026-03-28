@@ -54,7 +54,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                     transform: `translateX(-${currentIndex * (100 / slidesToShow)}%)`
                     }}
                 >
-                    {images.map((i, index) => (
+                    {images.map((_, index) => (
                     <div
                         key={index}
                         className="px-2 shrink-0

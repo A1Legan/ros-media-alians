@@ -15,15 +15,15 @@ export default function Project() {
                 src={Create}
                 width={20}
                 alt="Create"/>
-                <p className="mt-1">Проект в работе</p>
+                <p className="mt-1 text-white">Проект в работе</p>
             </div>
             <hr className="border border-dashed opacity-25"/>
             <div className="flex flex-col gap-4">
-                <h3 className="text-xl font-bold mt-4">Название проекта</h3>
+                <h3 className="text-xl font-bold mt-4 text-white">Название проекта</h3>
                 <Image className="ml-auto mr-auto"
                 src={Cover}
                 alt="Project"/>
-                <p className="opacity-75 max-w-100">Lorem ipsum dolor sit amet consectetur. Est pretium urna ut dui quis at turpis id. Tincidunt cursus sodales elit egestas vestibulum eget...</p>
+                <p className="opacity-75 max-w-100 text-white">Lorem ipsum dolor sit amet consectetur. Est pretium urna ut dui quis at turpis id. Tincidunt cursus sodales elit egestas vestibulum eget...</p>
             </div>
         </Link>
     );

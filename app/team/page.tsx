@@ -72,36 +72,30 @@ const teamMembers: TeamMember[] = [
 const categories = ["Вся команда", "Руководство", "Исполнительный совет", "Попечительский совет"];
 
 export default function Home() {
-    const [activeCategory, setActiveCategory] = useState<string>("Все");
-
-  // Исправленная фильтрация
+    const [activeCategory, setActiveCategory] = useState<string>("Вся команда");
     const filteredMembers = teamMembers.filter((member) => {
         if (activeCategory === "Вся команда") return true;
         return member.category === activeCategory;
     });
-
-  // Для заголовка блока
-    const getDisplayTitle = () => {
-        if (activeCategory === "Вся команда") return "Вся команда";
-        return activeCategory;
-    };
     return (
         <section className="flex flex-col ml-auto mr-auto max-w-336 gap-12 px-5
             lg:px-0"
         >
         <div>
             <div className="flex items-center gap-2">
-                <Link href="/" className="opacity-50">Главная</Link>
+                <Link href="/" className="opacity-50 text-white">Главная</Link>
                 <Image className="opacity-50"
                 src={Pentangle}
                 width={8}
                 alt="Pentangle"/>
-                <p>Команда</p>
+                <p className="text-white">Команда</p>
             </div>
-            <h2 className="flex items-center gap-2 text-4xl">Команда</h2>
+            <h2 className="flex items-center gap-2 text-4xl text-white">Команда</h2>
         </div>
         <div>
-            <div className="flex gap-3 mb-8">
+            <div className="flex gap-3 mb-8 max-w-108 flex-wrap flex-row
+                lg:max-w-full"
+            >
                 {categories.map((category) => (
                     <button
                         key={category}
@@ -128,7 +122,7 @@ export default function Home() {
                     <Image className="rounded-2xl"
                     src={Ann}
                     alt=""/>
-                    <div className="flex flex-col text-center justify-center ml-auto mr-auto mt-2
+                    <div className="flex flex-col text-center justify-center ml-auto mr-auto mt-2 text-white
                         lg:w-70"
                     >
                         <p className="text-2xl">{member.name}</p>
@@ -140,13 +134,13 @@ export default function Home() {
                 </div>
             ))
         ) : (
-            <div className="px-6 py-8 text-center text-gray-500">
+            <div className="px-6 py-8 text-center text-white opacity-50">
                 Нет проектов в этой категории
             </div>
         )}
         </div>
         <Link href="#" className="flex gap-2 items-center justify-center">
-                <p className="opacity-50">Показать ещё</p>
+                <p className="opacity-50 text-white">Показать ещё</p>
                 <Image 
                 src={Arrow}
                 width={20}

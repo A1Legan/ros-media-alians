@@ -12,14 +12,14 @@ export default function Home() {
         >
             <div>
                 <div className="flex items-center gap-2">
-                    <Link href="/" className="opacity-50">Главная</Link>
+                    <Link href="/" className="opacity-50 text-white">Главная</Link>
                     <Image className="opacity-50"
                     src={Pentangle}
                     width={8}
                     alt="Pentangle"/>
-                    <p>Партнёры</p>
+                    <p className="text-white">Партнёры</p>
                 </div>
-                <h2 className="flex items-center gap-2 text-4xl">Партнёры</h2>
+                <h2 className="flex items-center gap-2 text-4xl text-white">Партнёры</h2>
             </div>
             <div className="hidden flex-col gap-4
                 lg:flex"
